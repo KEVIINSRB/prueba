@@ -22,16 +22,11 @@ var controller = {
 		var cliente = new Cliente();
 
 		var params = req.body;
-		cliente.identificacion = params.identificacion;
-		cliente.tipoIdentificacion = params.tipoIdentificacion
-		cliente.primerNombre = params.primerNombre;
-		cliente.segundoNombre = params.segundoNombre;
-		cliente.primerApellido = params.primerApellido;
-		cliente.segundoApellido = params.segundoApellido;
+		cliente.nombre = params.nombre;
+		cliente.apellido = params.apellido;
 		cliente.direccion = params.direccion;
 		cliente.telefono = params.telefono;
 		cliente.Email = params.Email;
-		cliente.ocupacion = params.ocupacion
 		cliente.fechaNacimiento =params.fechaNacimiento;
 		cliente.image = null;
 
